@@ -1,9 +1,10 @@
 import { initialize, mswDecorator } from 'msw-storybook-addon'
+import { basePath } from './../config/basePath'
 
 // Initialize MSW
 initialize({
   serviceWorker: {
-    url: '/front/mockServiceWorker.js',
+    url: `/${basePath}/mockServiceWorker.js`,
     options: {
       scope: '/',
     },

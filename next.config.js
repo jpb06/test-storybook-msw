@@ -1,7 +1,10 @@
+const initializeConfig = require('./config/initializeConfig')
+const { basePath } = require('./config/basePath')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: '/front',
+  basePath: `/${basePath}`,
   async headers() {
     return [
       {
@@ -17,4 +20,10 @@ const nextConfig = {
   },
 }
 
-module.exports = nextConfig
+const { serverRuntimeConfig, publicRuntimeConfig } = initializeConfig()
+
+module.exports = {
+  ...nextConfig,
+  serverRuntimeConfig,
+  publicRuntimeConfig,
+}
