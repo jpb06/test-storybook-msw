@@ -1,0 +1,18 @@
+{
+  "recommendations": [
+    "formulahendry.auto-rename-tag",
+    "coenraads.bracket-pair-colorizer-2",
+    "naumovs.color-highlight",
+    "dbaeumer.vscode-eslint",
+    "vincaslt.highlight-matching-tag",
+    "oderwat.indent-rainbow",
+    "christian-kohler.path-intellisense",
+    "esbenp.prettier-vscode",
+    "zengxingxin.sort-js-object-keys",
+    "pkief.material-icon-theme",
+    "EditorConfig.EditorConfig",
+    "bierner.markdown-emoji",
+    "mhutchie.git-graph",
+    "VisualStudioExptTeam.vscodeintellicode"
+  ]
+}
