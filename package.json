@@ -1,6 +1,9 @@
 {
   "name": "test-storybook-msw",
   "private": true,
+  "repository": "https://github.com/jpb06/test-storybook-msw.git",
+  "author": "jpb06 <jpb.06@outlook.com>",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
