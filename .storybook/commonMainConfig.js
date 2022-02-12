@@ -2,12 +2,12 @@ const tsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin')
 
 module.exports = {
   stories: [
-    '../stories/**/*.stories.mdx',
-    '../stories/**/*.stories.@(js|jsx|ts|tsx)',
+    '../../stories/**/*.stories.mdx',
+    '../../stories/**/*.stories.@(js|jsx|ts|tsx)',
   ],
   addons: ['@storybook/addon-links', '@storybook/addon-essentials'],
   framework: '@storybook/react',
-  staticDirs: ['../public'],
+  staticDirs: ['../../public'],
   webpackFinal: async (config) => {
     config.resolve.plugins = [
       ...(config.resolve.plugins || []),
@@ -15,6 +15,7 @@ module.exports = {
         extensions: config.resolve.extensions,
       }),
     ]
+
     return config
   },
 }

@@ -7,8 +7,8 @@
     "start": "next start",
     "start:dev": "yarn build-storybook && next build && next start -p 3001",
     "lint": "next lint",
-    "storybook": "start-storybook -s ./public -p 6006",
-    "build-storybook": "build-storybook --quiet && rm -rf ./public/storybook && mv ./storybook-static ./public/storybook"
+    "storybook": "start-storybook -p 6006 -c .storybook/dev",
+    "build-storybook": "build-storybook --quiet -c .storybook/prod && rm -rf ./public/storybook && mv ./storybook-static ./public/storybook"
   },
   "dependencies": {
     "next": "12.0.10",

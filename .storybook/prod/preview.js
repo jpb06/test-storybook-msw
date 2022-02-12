@@ -1,5 +1,6 @@
 import { initialize, mswDecorator } from 'msw-storybook-addon'
-import { basePath } from './../config/basePath'
+import { basePath } from './../../config/basePath'
+import { commonParameters } from './../commonParameters'
 
 // Initialize MSW
 initialize({
@@ -13,13 +14,4 @@ initialize({
 
 // Provide the MSW addon decorator globally
 export const decorators = [mswDecorator]
-
-export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
-  controls: {
-    matchers: {
-      color: /(background|color)$/i,
-      date: /Date$/,
-    },
-  },
-}
+export const parameters = commonParameters
