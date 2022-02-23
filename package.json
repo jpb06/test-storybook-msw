@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "yarn build-storybook && next build",
     "start": "next start",
     "start:dev": "yarn build-storybook && next build && next start -p 3001",
     "lint": "next lint --dir ./src",
