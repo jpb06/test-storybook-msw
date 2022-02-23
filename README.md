@@ -1,34 +1,139 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ✨ test-storybook-msw
 
-## Getting Started
+Here is a little POC exploring a few subjects:
 
-First, run the development server:
+- How to architecture an application.
+- How to give visibility to the outside world (a product team for example) by using storybook.
+- How to use storybook in a next app that requires a basePath.
 
-```bash
-npm run dev
-# or
-yarn dev
+## ⚡ Architecture
+
+Our goal here is to know easily how we should test a component. Some are simple and may only need a few unit tests to get the team confident about their robustessness. On the other hand, others may be quite complex, embedding interactions with the outside world, or complex logic for example.
+
+![Diagram](./docs/atomic-design.png)
+
+We can use [atomic design](https://atomicdesign.bradfrost.com/chapter-2/) as a basis to classify our components. This approach has several advantages:
+
+### 🔶 Common language used in tech team and in product team
+
+It's easier to work together if a common language is used by both the product team and the dev team, instead of having a purely technical way to define components on one side, and a product driven definition on the other side.
+
+### 🔶 Removing ambiguity about testing
+
+How should I test my component? Which rules should I follow when testing it? Why should I even choose that testing strategy in place on another?
+
+We can make it easier for every developer in our team to answer these questions right away by binding a testing strategy to each type of component. This clarifies what is expected for a component as well (code reviews ...).
+
+### 🔶 Plan ahead
+
+Classifying components will make it easier for us on the long run: we will be able to reason by scale and to use a divide & conquer approach when preparing a user story. This page contains two independent parts with complex rendering? Well, that means we will have two organisms then! That means we will write two integration tests!
+
+## ⚡ Cool! But what does it means concretely?
+
+Let's reflect on the classification we want to use. Here is a proposal:
+
+- Since we are using an UI library (Mui), we can consider components coming from this library to be **Atoms**.
+- **Molecules** could be simple components.
+- **Organsms** may be bigger entities, embedding complex logic or having sophisticated rendering logic.
+- We may want to create a 1-1 relationship between user stories and **Templates**. In that context, templates would be the root component of an entire page.
+- Finally **Pages** would pretty much be nextjs pages...
+
+![Diagram](./docs/frontend-architecture.png)
+
+With this in mind, we can now think about a decision tree to identify the type of every component. We will also take advantage of this to define a few things:
+
+- What should and shouldn't be on storybook.
+- Which testing strategy should be used for each category.
+
+![Diagram](./docs/components-categorization.png)
+
+## ⚡ Testing strategy
+
+Let's talk a bit about the various types of tests we can do and what problems they do solve.
+
+### 🔶 Unit tests
+
+They focus on testing a module - could be a component or a function - in isolation. That means any outside context this module may rely upon will be mocked. This are pretty straightforward tests, which are typically really fast.
+
+### 🔶 Visual regression tests
+
+These tests check that the small bricks of our app didn't drastically change visually. This is pretty useful when we defined our own system design relying on a whole set of generic components.
+
+### 🔶 Snapshots
+
+Snapshots are useful to make sure we didn't visually break another part of the application by touching a generic component for example.
+
+### 🔶 Integration tests
+
+Integration tests have the highest return on investment because they are not as hard to write and maintain as e2e tests while giving us good confidence about a part of our system.
+
+### 🔶 End to end testing
+
+The tests giving us the most confidence. They also cost a lot. So it's generally wiser to only write e2e for key features of our application; the ones that represent a critical risk for the product.
+
+---
+
+To summarize, what we aim to do is trophy testing, basing ourself on [Typescript](https://www.typescriptlang.org), [jest](https://jestjs.io), [testing library](https://testing-library.com), [msw](https://mswjs.io) and [cypress](https://www.cypress.io).
+
+![Diagram](./docs/testing-trophy.jpg)
+
+## ⚡ Storybook
+
+Storybook gives us a great opportunity to demonstrate easily parts of our work on user stories instead of waiting for the completion of the entire user story.
+
+## ⚡ The basepath issue
+
+In our example here, our app is using a basepath. Let's see what it means for storybook:
+
+### 🔶 next.config.js
+
+Let's append the "Service-Worker-Allowed" header to each response, overriding the default worker's scope:
+
+```javascript
+module.exports = {
+  basePath: '/front',
+  async headers() {
+    return [
+      {
+        source: '/(.*)',
+        headers: [
+          {
+            key: 'Service-Worker-Allowed',
+            value: '/',
+          },
+        ],
+      },
+    ];
+  },
+};
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔶 Storybook config
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+We will have to use a config for production and another for dev, because of the basepath. In dev mode, there won't be any basepath since we launch storybook in dev mode.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+#### 🌀 dev config
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```javascript
+import { initialize } from 'msw-storybook-addon';
 
-## Learn More
+// Initialize MSW
+initialize({ onUnhandledRequest: 'bypass' });
+```
 
-To learn more about Next.js, take a look at the following resources:
+#### 🌀 prod config
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```javascript
+import { initialize } from 'msw-storybook-addon';
+import { basePath } from '../../config/basePath';
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+// Initialize MSW
+initialize({
+  serviceWorker: {
+    url: `${basePath}/mockServiceWorker.js`,
+    options: {
+      scope: '/',
+    },
+  },
+});
+```
