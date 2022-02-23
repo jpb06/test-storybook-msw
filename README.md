@@ -3,12 +3,15 @@
 Here is a little POC exploring a few subjects:
 
 - How to architecture an application.
-- How to give visibility to the outside world (a product team for example) by using storybook.
+- What stategy to adopt to test a frontend app.
+- How to give visibility to the outside world (a product team for example) about how well and fast the team is working on a user story.
 - How to use storybook in a next app that requires a basePath.
 
 ## ⚡ Architecture
 
-Our goal here is to know easily how we should test a component. Some are simple and may only need a few unit tests to get the team confident about their robustessness. On the other hand, others may be quite complex, embedding interactions with the outside world, or complex logic for example.
+Our goal here is to classify components in order to know easily how we should test them: some components are simple and may only need a few unit tests to get the team confident about their robustessness. On the other hand, others may be quite complex, embedding interactions with the outside world, or complex logic for example.
+
+Categorizing components can also help us defining what could be a milestone for us in the delivery of a user story.
 
 ![Diagram](./docs/atomic-design.png)
 
@@ -32,11 +35,13 @@ Classifying components will make it easier for us on the long run: we will be ab
 
 Let's reflect on the classification we want to use. Here is a proposal:
 
-- Since we are using an UI library (Mui), we can consider components coming from this library to be **Atoms**.
-- **Molecules** could be simple components.
-- **Organsms** may be bigger entities, embedding complex logic or having sophisticated rendering logic.
-- We may want to create a 1-1 relationship between user stories and **Templates**. In that context, templates would be the root component of an entire page.
-- Finally **Pages** would pretty much be nextjs pages...
+| Category  | Description                                                                                                                                                                                                          |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Atoms     | Since we are using an UI library (Mui), we can consider components coming from this library to be **Atoms**. Somebody also is responsible for testing them, so no need to do that!                                   |
+| Molecules | Simple components only do one thing. They have little to no logic on their own; they often are just presentational                                                                                                   |
+| Organisms | Some compoents are bigger, embedding complex logic or having sophisticated rendering logic. This is often where something can go wrong in our app: several small blocks having to work together to come to a result. |
+| Templates | We may want to create a 1-1 relationship between user stories and **Templates**. In that context, templates would be the root component of an entire page, made from several organisms                               |
+| Pages     | Finally **Pages** would pretty much be nextjs pages...                                                                                                                                                               |
 
 ![Diagram](./docs/frontend-architecture.png)
 
