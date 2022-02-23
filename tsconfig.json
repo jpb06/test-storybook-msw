@@ -14,7 +14,19 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "@api": ["src/api"],
+      "@api/msw-handlers": ["src/api/msw.handlers.ts"],
+      "@api/types/*": ["src/api/main-backend/specs/*"],
+      "@molecules": ["src/molecules"],
+      "@organisms": ["src/organisms"],
+      "@templates": ["src/templates"],
+      "@providers": ["src/molecules/providers"],
+      "@logic/*": ["src/logic/*"],
+      "@theme": ["src/theme"],
+      "@tests/*": ["src/tests/*"]
+    }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]

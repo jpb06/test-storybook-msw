@@ -1,10 +1,14 @@
-const initializeConfig = require('./config/initializeConfig')
-const { basePath } = require('./config/basePath')
+const { basePath } = require('./config/basePath');
+const initializeConfig = require('./config/initializeConfig');
+
+const { serverRuntimeConfig, publicRuntimeConfig } = initializeConfig();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  basePath: `/${basePath}`,
+  pageExtensions: ['page.tsx', 'api.ts'],
+  swcMinify: true,
+  basePath,
   async headers() {
     return [
       {
@@ -16,14 +20,10 @@ const nextConfig = {
           },
         ],
       },
-    ]
+    ];
   },
-}
-
-const { serverRuntimeConfig, publicRuntimeConfig } = initializeConfig()
-
-module.exports = {
-  ...nextConfig,
   serverRuntimeConfig,
   publicRuntimeConfig,
-}
+};
+
+module.exports = nextConfig;
