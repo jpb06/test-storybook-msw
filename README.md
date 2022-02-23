@@ -79,7 +79,21 @@ To summarize, what we aim to do is trophy testing, basing ourself on [Typescript
 
 ## ⚡ Storybook
 
-Storybook gives us a great opportunity to demonstrate easily parts of our work on user stories instead of waiting for the completion of the entire user story.
+Storybook gives us a great opportunity to demonstrate easily parts of our work on user stories instead of waiting for the completion of the entire user story. Let's take an example:
+
+On [this page](https://test-storybook-msw.vercel.app/front), we have two independent blocks: one for the user profile on github and one for the user skills. Instead of doing a demo of the entire page (which may reprensent a user story), we can use storybook to deliver parts of the user story as soon as they are completed:
+
+### 🔶 Molecules
+
+- [Profile infos](https://test-storybook-msw.vercel.app/front/storybook/index.html?path=/story/user-stories-github-user-molecules-profileinfo--nominal-case)
+- [User avatar](https://test-storybook-msw.vercel.app/front/storybook/index.html?path=/story/user-stories-github-user-molecules-useravatar--nominal-case)
+- [Card skeleton](https://test-storybook-msw.vercel.app/front/storybook/index.html?path=/story/user-stories-github-user-molecules-cardskeleton--nominal-case)
+- [List skeleton](https://test-storybook-msw.vercel.app/front/storybook/index.html?path=/story/user-stories-github-user-molecules-listskeleton--nominal-case)
+
+### 🔶 Organisms
+
+- [user profile](https://test-storybook-msw.vercel.app/front/storybook/index.html?path=/story/user-stories-github-user-organisms-userprofile--nominal-case)
+- [user skills](https://test-storybook-msw.vercel.app/front/storybook/index.html?path=/story/user-stories-github-user-organisms-userskills--nominal-case)
 
 ## ⚡ The basepath issue
 
