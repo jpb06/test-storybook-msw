@@ -85,6 +85,20 @@ Storybook gives us a great opportunity to demonstrate easily parts of our work o
 
 In our example here, our app is using a basepath. Let's see what it means for storybook:
 
+### 🔶 Unifying next config
+
+The first step is to unify next config, where basepath will be defined:
+
+```javascript
+// config/basePath.js
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/front';
+
+module.exports = {
+  basePath,
+};
+```
+
 ### 🔶 next.config.js
 
 Let's append the "Service-Worker-Allowed" header to each response, overriding the default worker's scope:
