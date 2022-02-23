@@ -1,3 +1,5 @@
-const config = require('../commonMainConfig')
+const { getStorybookMainConfig } = require('../commonMainConfig');
 
-module.exports = config
+const config = getStorybookMainConfig('../config/initializeConfig');
+
+module.exports = config;

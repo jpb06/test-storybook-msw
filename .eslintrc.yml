@@ -69,10 +69,7 @@ rules:
       alphabetize:
         order: 'asc'
       pathGroups:
-        - pattern: '{@components/generic/**}'
-          group: internal
-          position: before
-        - pattern: '{@api/**,@components/!(generic)/**,@styles/**,@owntypes/**,@logic/**,@tests/**,@theme/**,@locales/**,@constants/**,@schemas/**}'
+        - pattern: '{@api/**,@api,@molecules,@organisms,@templates,@providers,@tests/**,@logic/**,@theme}'
           group: internal
           position: after
       pathGroupsExcludedImportTypes:

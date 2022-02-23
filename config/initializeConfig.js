@@ -1,12 +1,10 @@
-const { basePath } = './basePath'
+const { basePath } = require('./basePath');
 
-const initializeConfig = () => {
-  return {
-    serverRuntimeConfig: {},
-    publicRuntimeConfig: {
-      basePath,
-    },
-  }
-}
+const initializeConfig = () => ({
+  serverRuntimeConfig: {},
+  publicRuntimeConfig: {
+    basePath,
+  },
+});
 
-module.exports = initializeConfig
+module.exports = initializeConfig;
