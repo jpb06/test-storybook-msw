@@ -1,5 +1,19 @@
 # ✨ test-storybook-msw
 
+[![Front deployment](https://img.shields.io/github/deployments/jpb06/test-storybook-msw/production?label=front%20deploy&logo=vercel&logoColor=white)](https://test-storybook-msw.vercel.app/front)
+![Github workflow](https://img.shields.io/github/workflow/status/jpb06/test-storybook-msw/tests%20and%20sonarcloud%20scan?label=last%20workflow&logo=github-actions)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=sqale_rating)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=reliability_rating)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=coverage)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Technical Debt](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=sqale_index)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Code Smells](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=code_smells)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Bugs](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=bugs)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+[![Duplicated Lines (%)](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=duplicated_lines_density)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
+![Last commit](https://img.shields.io/github/last-commit/jpb06/test-storybook-msw?logo=git)
+
 Here is a little POC exploring a few subjects:
 
 - How to architecture an application.
