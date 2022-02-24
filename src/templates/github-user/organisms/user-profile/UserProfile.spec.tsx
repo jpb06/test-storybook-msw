@@ -15,7 +15,7 @@ describe('UserProfile component', () => {
 
       const { baseElement } = render(<UserProfile />);
 
-      await screen.findByRole('img');
+      await screen.findByRole('img', { name: /yolo mcbro/i });
 
       expect(baseElement).toMatchSnapshot();
     });

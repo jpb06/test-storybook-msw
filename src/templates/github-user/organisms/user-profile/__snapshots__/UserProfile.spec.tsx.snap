@@ -218,10 +218,19 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
         <div
           class="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
         >
-          <span
-            class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-twt492-MuiSkeleton-root"
-            style="width: 55px; height: 55px;"
-          />
+          <div
+            class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column css-1ewlecp-MuiGrid-root"
+          >
+            <div
+              class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
+            >
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-18949cl-MuiAvatar-root"
+              >
+                YM
+              </div>
+            </div>
+          </div>
         </div>
         <div
           class="MuiCardHeader-content css-1qbkelo-MuiCardHeader-content"
@@ -229,18 +238,12 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
           <span
             class="MuiTypography-root MuiTypography-body2 MuiCardHeader-title css-et1ao3-MuiTypography-root"
           >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
-              style="width: 80%; height: 16px; margin-top: 14px; margin-bottom: 6px;"
-            />
+            Yolo McBro
           </span>
           <span
             class="MuiTypography-root MuiTypography-body2 MuiCardHeader-subheader css-83ijpv-MuiTypography-root"
           >
-            <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
-              style="width: 40%; height: 14px; margin-bottom: 22px;"
-            />
+            cool.bro@yolo.org
           </span>
         </div>
         <div
@@ -270,26 +273,38 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
         </div>
       </div>
       <img
-        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-mygpk5-MuiCardMedia-root"
+        alt="Yolo McBro"
+        class="MuiCardMedia-root MuiCardMedia-media MuiCardMedia-img css-o69gx8-MuiCardMedia-root"
         height="160"
         src="/front/img/github-logo.jpeg"
       />
       <div
-        class="MuiCardContent-root css-10j7fi-MuiCardContent-root"
+        class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
       >
         <ul
           class="MuiList-root MuiList-padding MuiList-dense css-h4y409-MuiList-root"
         >
           <li
-            class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-1yfhx2g-MuiListItem-root"
+            class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-6lnq02-MuiListItem-root"
           >
             <div
               class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
             >
-              <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-twt492-MuiSkeleton-root"
-                style="width: 40px; height: 40px;"
-              />
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-ax6k3r-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="LocationOnIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                  />
+                </svg>
+              </div>
             </div>
             <div
               class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
@@ -297,31 +312,36 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
               <span
                 class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
               >
-                <span
-                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
-                  style="width: 20%; height: 14px;"
-                />
+                Location
               </span>
               <p
                 class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
               >
-                <span
-                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
-                  style="width: 60%; height: 14px;"
-                />
+                Paris, France
               </p>
             </div>
           </li>
           <li
-            class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-1yfhx2g-MuiListItem-root"
+            class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-6lnq02-MuiListItem-root"
           >
             <div
               class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
             >
-              <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-twt492-MuiSkeleton-root"
-                style="width: 40px; height: 40px;"
-              />
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-ax6k3r-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CommitIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M16.9 11c-.46-2.28-2.48-4-4.9-4s-4.44 1.72-4.9 4H2v2h5.1c.46 2.28 2.48 4 4.9 4s4.44-1.72 4.9-4H22v-2h-5.1zM12 15c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z"
+                  />
+                </svg>
+              </div>
             </div>
             <div
               class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
@@ -329,31 +349,36 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
               <span
                 class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
               >
-                <span
-                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
-                  style="width: 20%; height: 14px;"
-                />
+                Public repos
               </span>
               <p
                 class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
               >
-                <span
-                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
-                  style="width: 60%; height: 14px;"
-                />
+                12
               </p>
             </div>
           </li>
           <li
-            class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-1yfhx2g-MuiListItem-root"
+            class="MuiListItem-root MuiListItem-dense MuiListItem-gutters MuiListItem-padding css-6lnq02-MuiListItem-root"
           >
             <div
               class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
             >
-              <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-twt492-MuiSkeleton-root"
-                style="width: 40px; height: 40px;"
-              />
+              <div
+                class="MuiAvatar-root MuiAvatar-circular MuiAvatar-colorDefault css-ax6k3r-MuiAvatar-root"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-i4bv87-MuiSvgIcon-root"
+                  data-testid="CampaignIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M18 11v2h4v-2h-4zm-2 6.61c.96.71 2.21 1.65 3.2 2.39.4-.53.8-1.07 1.2-1.6-.99-.74-2.24-1.68-3.2-2.4-.4.54-.8 1.08-1.2 1.61zM20.4 5.6c-.4-.53-.8-1.07-1.2-1.6-.99.74-2.24 1.68-3.2 2.4.4.53.8 1.07 1.2 1.6.96-.72 2.21-1.65 3.2-2.4zM4 9c-1.1 0-2 .9-2 2v2c0 1.1.9 2 2 2h1v4h2v-4h1l5 3V6L8 9H4zm11.5 3c0-1.33-.58-2.53-1.5-3.35v6.69c.92-.81 1.5-2.01 1.5-3.34z"
+                  />
+                </svg>
+              </div>
             </div>
             <div
               class="MuiListItemText-root MuiListItemText-dense MuiListItemText-multiline css-konndc-MuiListItemText-root"
@@ -361,18 +386,12 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
               <span
                 class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
               >
-                <span
-                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
-                  style="width: 20%; height: 14px;"
-                />
+                Followers
               </span>
               <p
                 class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-83ijpv-MuiTypography-root"
               >
-                <span
-                  class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
-                  style="width: 60%; height: 14px;"
-                />
+                243
               </p>
             </div>
           </li>
