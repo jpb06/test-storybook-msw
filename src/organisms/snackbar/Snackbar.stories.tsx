@@ -19,7 +19,7 @@ import { SnackbarContext, WithSnackbar } from './Snackbar.context';
 
 export default {
   component: WithSnackbar,
-  title: 'organisms/feedback/Snackbar',
+  title: 'organisms/Snackbar',
   parameters: {
     viewport: {
       viewports: INITIAL_VIEWPORTS,

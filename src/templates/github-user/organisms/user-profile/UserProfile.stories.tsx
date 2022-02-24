@@ -4,6 +4,7 @@ import { githubProfileQueryHandler } from '@api/msw-handlers';
 import { ReactQueryWrapper } from '@tests/wrappers/react-query';
 
 import { UserProfile } from './UserProfile';
+import { apiErrorMockData } from './mock-data/api-error.mock-data';
 import { githubProfileQueryMockData } from './mock-data/githubProfileQuery.mock-data';
 
 export default {
@@ -25,5 +26,13 @@ NominalCase.parameters = {
     handlers: [
       githubProfileQueryHandler(githubProfileQueryMockData, 200, false),
     ],
+  },
+};
+
+export const ErrorCase = Template.bind({});
+ErrorCase.args = {};
+ErrorCase.parameters = {
+  msw: {
+    handlers: [githubProfileQueryHandler(apiErrorMockData, 500, false)],
   },
 };

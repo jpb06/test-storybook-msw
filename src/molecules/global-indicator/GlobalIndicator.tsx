@@ -7,13 +7,11 @@ import { spinKeyframe } from '@logic/keyframes/spin.keyframe';
 import { appTheme } from '@theme';
 
 export type GlobalIndicatorProps = {
-  hasTopMargin: boolean;
   title: string;
   Icon: OverridableComponent<SvgIconTypeMap>;
 };
 
 export const GlobalIndicator: React.FC<GlobalIndicatorProps> = ({
-  hasTopMargin,
   title,
   Icon,
   children,
@@ -23,14 +21,15 @@ export const GlobalIndicator: React.FC<GlobalIndicatorProps> = ({
     sx={{
       textAlign: 'center',
       color: alpha(appTheme.colors.white, 0.8),
-      marginTop: hasTopMargin ? 15 : 0,
+      marginTop: 6,
+      marginBottom: 6,
     }}
   >
     <Icon
       sx={{
         height: 100,
         width: 100,
-        animation: `${spinKeyframe} 2s linear infinite`,
+        animation: `${spinKeyframe} 2s linear`,
       }}
     />
     <Box
