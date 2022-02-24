@@ -4,7 +4,7 @@ import { FullpageBox } from './FullpageBox';
 
 export default {
   component: FullpageBox,
-  title: 'molecules/layout/FullpageBox',
+  title: 'molecules/FullpageBox',
 } as ComponentMeta<typeof FullpageBox>;
 
 const Template: Story = (_) => <FullpageBox>Hello!</FullpageBox>;

@@ -9,7 +9,7 @@ describe('GlobalIndicator component', () => {
     const children = 'children';
 
     render(
-      <GlobalIndicator hasTopMargin title={title} Icon={Build}>
+      <GlobalIndicator title={title} Icon={Build}>
         {children}
       </GlobalIndicator>
     );

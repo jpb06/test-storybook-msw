@@ -10,19 +10,31 @@ import IconButton from '@mui/material/IconButton';
 
 import { GithubProfileQueryResult, useGithubProfileQuery } from '@api';
 import { getRuntimeConfig } from '@logic/getRuntimeConfig';
+import { TopAlert } from '@molecules';
 
 import { ProfileInfo } from './molecules/profile-info/ProfileInfo';
 import { CardSkeleton } from './molecules/skeletons/CardSkeleton';
 import { UserAvatar } from './molecules/user-avatar/UserAvatar';
 
 export const UserProfile = () => {
-  const { isLoading, data } = useGithubProfileQuery();
+  const { isLoading, isError, data } = useGithubProfileQuery();
   const {
     public: { basePath },
   } = getRuntimeConfig();
 
   if (isLoading) {
     return <CardSkeleton />;
+  }
+
+  if (isError) {
+    return (
+      <TopAlert
+        severity="error"
+        errorText="We've been unable to load your profile"
+      >
+        <CardSkeleton />
+      </TopAlert>
+    );
   }
 
   const { followers, location, public_repos, name, email } =

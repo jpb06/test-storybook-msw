@@ -10,7 +10,7 @@ const icons = { TagFacesIcon, ErrorIcon, AnnouncementIcon, BugReportIcon };
 
 export default {
   component: GlobalIndicator,
-  title: 'molecules/feedback/GlobalIndicator',
+  title: 'molecules/GlobalIndicator',
   argTypes: {
     Icon: {
       options: Object.keys(icons),
@@ -35,6 +35,5 @@ const Template: Story<GlobalIndicatorProps> = (args) => (
 export const Primary = Template.bind({});
 Primary.args = {
   title: 'Imma let you know ...',
-  hasTopMargin: true,
   Icon: TagFacesIcon,
 };
