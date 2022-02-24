@@ -23,7 +23,7 @@ export const NominalCase = Template.bind({});
 NominalCase.args = {};
 NominalCase.parameters = {
   msw: {
-    handlers: [skillsQueryHandler({ result: skillsQueryMockData }, 200, false)],
+    handlers: [skillsQueryHandler(skillsQueryMockData, 200, false)],
   },
 };
 
