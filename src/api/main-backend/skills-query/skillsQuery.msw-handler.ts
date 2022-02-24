@@ -8,4 +8,5 @@ export const skillsQueryHandler = (
   result: DefaultRequestBody,
   status = 200,
   applyToServer = true
-) => genericGetHandler({ url: path, status, result, applyToServer });
+) =>
+  genericGetHandler({ url: path, status, result: { result }, applyToServer });

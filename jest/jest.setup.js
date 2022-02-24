@@ -1,8 +1,11 @@
 import '@testing-library/jest-dom/extend-expect';
-import initializeConfig from './../config/initializeConfig';
 import { server } from '../src/tests/msw/server';
 
-jest.mock('next/config', () => () => initializeConfig());
+jest.mock('next/config', () => () => ({
+  publicRuntimeConfig: {
+    basePath: '/front',
+  },
+}));
 
 beforeAll(() => server.listen({ onUnhandledRequest: 'error' }));
 afterEach(() => server.resetHandlers());
