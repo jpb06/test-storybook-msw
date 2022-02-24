@@ -28,14 +28,13 @@ describe('axiosRequest function', () => {
   });
 
   it('should return result', async () => {
-    const method = 'GET';
     getHandler(200, {
       result: data,
     });
 
     const result = await axiosRequest({
       url: genericGetUrl,
-      method,
+      method: 'GET',
     });
 
     expect(result).toStrictEqual(data);
