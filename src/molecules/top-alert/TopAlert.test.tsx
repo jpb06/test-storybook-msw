@@ -2,7 +2,7 @@ import { screen, render } from '@testing-library/react';
 
 import { TopAlert } from './TopAlert';
 
-describe('FullpageBox component', () => {
+describe('TopAlert component', () => {
   const error = 'Oh no!';
   const children = 'My child';
 
