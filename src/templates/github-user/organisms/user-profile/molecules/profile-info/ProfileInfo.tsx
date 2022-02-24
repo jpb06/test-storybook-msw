@@ -10,9 +10,7 @@ import { OverridableComponent } from '@mui/material/OverridableComponent';
 import { appTheme } from '@theme';
 
 export type ProfileInfoProps = {
-  Icon: OverridableComponent<SvgIconTypeMap<unknown, 'svg'>> & {
-    muiName: string;
-  };
+  Icon: OverridableComponent<SvgIconTypeMap>;
   type: string;
   value: string | number;
 };
