@@ -7,7 +7,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
       class="MuiBox-root css-0"
     >
       <div
-        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-outlinedError MuiAlert-outlined css-1yc4i3e-MuiPaper-root-MuiAlert-root"
+        class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation0 MuiAlert-root MuiAlert-outlinedError MuiAlert-outlined css-1bnvdrg-MuiPaper-root-MuiAlert-root"
         role="alert"
       >
         <div
@@ -32,7 +32,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
         </div>
       </div>
       <div
-        class="MuiBox-root css-1k9ek97"
+        class="MuiBox-root css-1sde1ub"
       >
         <div
           class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column css-bmcivo-MuiGrid-root"
@@ -41,7 +41,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
             class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-u0ssf3-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1c57pqz-MuiSkeleton-root"
               style="width: 50px; height: 20px;"
             />
           </div>
@@ -52,11 +52,11 @@ exports[`UserProfile component error case should match snapshot 1`] = `
               class="MuiGrid-root MuiGrid-container css-17rbshw-MuiGrid-root"
             >
               <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-k47ddw-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-bw8jas-MuiSkeleton-root"
                 style="width: 30px; height: 30px;"
               />
               <span
-                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
                 style="width: 120px; height: 25px;"
               />
             </div>
@@ -68,11 +68,11 @@ exports[`UserProfile component error case should match snapshot 1`] = `
               class="MuiGrid-root MuiGrid-container css-17rbshw-MuiGrid-root"
             >
               <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-k47ddw-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-bw8jas-MuiSkeleton-root"
                 style="width: 30px; height: 30px;"
               />
               <span
-                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
                 style="width: 120px; height: 25px;"
               />
             </div>
@@ -84,11 +84,11 @@ exports[`UserProfile component error case should match snapshot 1`] = `
               class="MuiGrid-root MuiGrid-container css-17rbshw-MuiGrid-root"
             >
               <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-k47ddw-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-bw8jas-MuiSkeleton-root"
                 style="width: 30px; height: 30px;"
               />
               <span
-                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1dk1h2u-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
                 style="width: 120px; height: 25px;"
               />
             </div>
@@ -105,21 +105,21 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
   <div>
     <nav
       aria-labelledby="nested-list-subheader"
-      class="MuiList-root MuiList-padding MuiList-subheader css-y7uye9-MuiList-root"
+      class="MuiList-root MuiList-padding MuiList-subheader css-ah3865-MuiList-root"
     >
       <div
-        class="MuiListSubheader-root MuiListSubheader-gutters MuiListSubheader-sticky css-uob957-MuiListSubheader-root"
+        class="MuiListSubheader-root MuiListSubheader-gutters MuiListSubheader-sticky css-1a4ojvj-MuiListSubheader-root"
         id="nested-list-subheader"
       >
         Skills
       </div>
       <div
-        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-cvhtoe-MuiButtonBase-root-MuiListItemButton-root"
+        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-1qr6hq4-MuiButtonBase-root-MuiListItemButton-root"
         role="button"
         tabindex="0"
       >
         <div
-          class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+          class="MuiListItemIcon-root css-qklaqr-MuiListItemIcon-root"
         >
           <svg
             aria-hidden="true"
@@ -158,12 +158,12 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
         />
       </div>
       <div
-        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-cvhtoe-MuiButtonBase-root-MuiListItemButton-root"
+        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-1qr6hq4-MuiButtonBase-root-MuiListItemButton-root"
         role="button"
         tabindex="0"
       >
         <div
-          class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+          class="MuiListItemIcon-root css-qklaqr-MuiListItemIcon-root"
         >
           <svg
             aria-hidden="true"
@@ -202,12 +202,12 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
         />
       </div>
       <div
-        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-cvhtoe-MuiButtonBase-root-MuiListItemButton-root"
+        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-1qr6hq4-MuiButtonBase-root-MuiListItemButton-root"
         role="button"
         tabindex="0"
       >
         <div
-          class="MuiListItemIcon-root css-cveggr-MuiListItemIcon-root"
+          class="MuiListItemIcon-root css-qklaqr-MuiListItemIcon-root"
         >
           <svg
             aria-hidden="true"
