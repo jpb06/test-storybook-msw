@@ -135,10 +135,17 @@ it('should display skills', async () => {
 
   render(<UserProfile />);
 
-  await screen.findByText(githubProfileQueryMockData.info.name);
-  screen.getByText(githubProfileQueryMockData.info.email);
-  screen.getByText(githubProfileQueryMockData.extra.raw_info.followers);
-  screen.getByText(githubProfileQueryMockData.extra.raw_info.public_repos);
+  const {
+    info: { name, email },
+    extra: {
+      raw_info: { followers, public_repos },
+    },
+  } = githubProfileQueryMockData;
+
+  await screen.findByText(name);
+  expect(screen.getByText(email)).toBeInTheDocument();
+  expect(screen.getByText(followers)).toBeInTheDocument();
+  expect(screen.getByText(public_repos)).toBeInTheDocument();
 });
 ```
 
