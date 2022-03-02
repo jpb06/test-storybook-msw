@@ -66,9 +66,29 @@ With this in mind, we can now think about a decision tree to identify the type o
 
 ![Diagram](./docs/components-categorization.png)
 
+### 🧿 Components categories
+
+#### 🎁 `molecules` and `organisms` folders
+
+We will have these folders at several levels, by order of genericity:
+
+- Shared components library, when components are meant to be used in several applications.
+- Inside the `src` folder of an application, when these components are meant to be used by several user stories in that application.
+- Inside a user story folder within an application, when the components will only be used in this user story.
+
+#### 🎁 `templates` folder
+
+The `templates` folder will contain one folder by user story. We can consider a user story equals a page (1 to 1 relationship with pages), or that a page will be made of several templates.
+
+#### 🎁 `Pages` folder
+
+The `pages` folder comes from nextjs. Each component in this folder will be a page served by next.
+
 ## ⚡ Testing strategy
 
-Let's talk a bit about the various types of tests we can do and what problems they do solve.
+Let's talk a bit about the various types of tests we can do and what problems they do solve. What we aim to do is trophy testing, basing ourself on [Typescript](https://www.typescriptlang.org), [jest](https://jestjs.io), [testing library](https://testing-library.com), [msw](https://mswjs.io) and [cypress](https://www.cypress.io).
+
+![Diagram](./docs/testing-trophy.jpg)
 
 ### 🔶 Unit tests
 
@@ -152,12 +172,6 @@ it('should display skills', async () => {
 ### 🔶 End to end testing
 
 The tests giving us the most confidence. They also cost a lot. So it's generally wiser to only write e2e for key features of our application; the ones that represent a critical risk for the product.
-
----
-
-To summarize, what we aim to do is trophy testing, basing ourself on [Typescript](https://www.typescriptlang.org), [jest](https://jestjs.io), [testing library](https://testing-library.com), [msw](https://mswjs.io) and [cypress](https://www.cypress.io).
-
-![Diagram](./docs/testing-trophy.jpg)
 
 ## ⚡ Storybook
 
