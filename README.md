@@ -45,17 +45,17 @@ We can make it easier for every developer in our team to answer these questions 
 
 Classifying components will make it easier for us on the long run: we will be able to reason by scale and to use a divide & conquer approach when preparing a user story. This page contains two independent parts with complex rendering? Well, that means we will have two organisms then! That means we will write two integration tests!
 
-## 🔶 Clarify the amount of job that needs to be done
+### 🔶 Clarify the amount of job that needs to be done
 
 It also can help us refine our estimations when we want to know how complex a user story is, by taking a look at the provided UI model. We can easily split it down in organisms, which themselves will be made with molecules, etc... Sizing the user story will be much easier by taking this approach.
 
-## 🔶 Create milestones
+### 🔶 Create milestones
 
 Using storybook, we can easily demonstrate how well is advancing the user story, and validate distinct parts of the user story with product team.
 
 ## ⚡ Cool, but what does it means concretely?
 
-### 🧿 Classifying our components
+### 🔶 Classifying our components
 
 Let's reflect on the classification we want to use and how it would reflect on our application folder structure. Here is a proposal:
 
@@ -69,14 +69,14 @@ Let's reflect on the classification we want to use and how it would reflect on o
 
 ![Diagram](./docs/frontend-architecture.png)
 
-#### 🎁 `molecules` and `organisms` folders
+#### 🧿 `molecules` and `organisms` folders
 
 In that proposal, we will have these folders at several levels, by order of genericity:
 
 - Inside the `src` folder of the application, when these components are meant to be used by several user stories.
 - Inside a user story folder, when the components will only be used in that user story.
 
-### 🧿 Defining a decision tree
+### 🔶 Defining a decision tree
 
 With this in mind, we can now think about a decision tree to identify the type of every component. We will also take advantage of this to define a few things:
 
@@ -237,7 +237,7 @@ module.exports = {
 
 We will have to use a config for production and another for dev, because of the basepath. In dev mode, there won't be any basepath since we launch storybook in dev mode.
 
-#### 🌀 dev config
+#### 🧿 dev config
 
 ```javascript
 import { initialize } from 'msw-storybook-addon';
@@ -246,7 +246,7 @@ import { initialize } from 'msw-storybook-addon';
 initialize({ onUnhandledRequest: 'bypass' });
 ```
 
-#### 🌀 prod config
+#### 🧿 prod config
 
 ```javascript
 import { initialize } from 'msw-storybook-addon';
