@@ -53,11 +53,11 @@ It also can help us refine our estimations when we want to know how complex a us
 
 Using storybook, we can easily demonstrate how well is advancing the user story, and validate distinct parts of the user story with product team.
 
-## ⚡ Cool, but what does it means concretely?
+## ⚡ Cool, but what does it mean concretely?
 
 ### 🔶 Classifying our components
 
-Let's reflect on the classification we want to use and how it would reflect on our application folder structure. Here is a proposal:
+Let's reflect on the classification we want to use and how it would impact our application folders structure. Here is a proposal:
 
 | Category  | Description                                                                                                                                                                                                          |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
