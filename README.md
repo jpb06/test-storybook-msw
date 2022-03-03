@@ -21,7 +21,7 @@ Here is a little POC exploring a few subjects:
 - How to give visibility to the outside world (a product team for example) about how well and fast the team is working on a user story.
 - How to use storybook in a next app that requires a basePath.
 
-## ⚡ Architecture
+## ⚡ Working with an application containing many components
 
 Our goal here is to classify components in order to know easily how we should test them: some components are simple and may only need a few unit tests to get the team confident about their robustessness. On the other hand, others may be quite complex, embedding interactions with the outside world, or complex logic for example.
 
@@ -45,9 +45,19 @@ We can make it easier for every developer in our team to answer these questions 
 
 Classifying components will make it easier for us on the long run: we will be able to reason by scale and to use a divide & conquer approach when preparing a user story. This page contains two independent parts with complex rendering? Well, that means we will have two organisms then! That means we will write two integration tests!
 
-## ⚡ Cool! But what does it means concretely?
+## 🔶 Clarify the amount of job that needs to be done
 
-Let's reflect on the classification we want to use. Here is a proposal:
+It also can help us refine our estimations when we want to know how complex a user story is, by taking a look at the provided UI model. We can easily split it down in organisms, which themselves will be made with molecules, etc... Sizing the user story will be much easier by taking this approach.
+
+## 🔶 Create milestones
+
+Using storybook, we can easily demonstrate how well is advancing the user story, and validate distinct parts of the user story with product team.
+
+## ⚡ Cool, but what does it means concretely?
+
+### 🧿 Classifying our components
+
+Let's reflect on the classification we want to use and how it would reflect on our application folder structure. Here is a proposal:
 
 | Category  | Description                                                                                                                                                                                                          |
 | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -59,30 +69,21 @@ Let's reflect on the classification we want to use. Here is a proposal:
 
 ![Diagram](./docs/frontend-architecture.png)
 
+#### 🎁 `molecules` and `organisms` folders
+
+In that proposal, we will have these folders at several levels, by order of genericity:
+
+- Inside the `src` folder of the application, when these components are meant to be used by several user stories.
+- Inside a user story folder, when the components will only be used in that user story.
+
+### 🧿 Defining a decision tree
+
 With this in mind, we can now think about a decision tree to identify the type of every component. We will also take advantage of this to define a few things:
 
 - What should and shouldn't be on storybook.
 - Which testing strategy should be used for each category.
 
 ![Diagram](./docs/components-categorization.png)
-
-### 🧿 Components categories
-
-#### 🎁 `molecules` and `organisms` folders
-
-We will have these folders at several levels, by order of genericity:
-
-- Shared components library, when components are meant to be used in several applications.
-- Inside the `src` folder of an application, when these components are meant to be used by several user stories in that application.
-- Inside a user story folder within an application, when the components will only be used in this user story.
-
-#### 🎁 `templates` folder
-
-The `templates` folder will contain one folder by user story. We can consider a user story equals a page (1 to 1 relationship with pages), or that a page will be made of several templates.
-
-#### 🎁 `Pages` folder
-
-The `pages` folder comes from nextjs. Each component in this folder will be a page served by next.
 
 ## ⚡ Testing strategy
 
