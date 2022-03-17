@@ -1,5 +1,6 @@
 # ✨ test-storybook-msw
 
+[![Open in Visual Studio Code](https://img.shields.io/static/v1?logo=visualstudiocode&label=&message=Open%20in%20Visual%20Studio%20Code&labelColor=2c2c32&color=007acc&logoColor=007acc)](https://github.dev/jpb06/test-storybook-msw)
 [![Front deployment](https://img.shields.io/github/deployments/jpb06/test-storybook-msw/production?label=front%20deploy&logo=vercel&logoColor=white)](https://test-storybook-msw.vercel.app/front)
 ![Github workflow](https://img.shields.io/github/workflow/status/jpb06/test-storybook-msw/tests%20and%20sonarcloud%20scan?label=last%20workflow&logo=github-actions)
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=jpb06_test-storybook-msw&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=jpb06_test-storybook-msw)
