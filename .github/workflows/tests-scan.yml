@@ -43,7 +43,7 @@ jobs:
           node-version-file: '.node-version'
 
       - name: Setting yarn version
-        run: yarn policies set-version 1.22.17
+        run: yarn policies set-version 1.22.18
 
       - name: Install dependencies
         run: yarn install --prefer-offline
