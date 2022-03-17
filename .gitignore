@@ -38,3 +38,6 @@ yarn-error.log*
 
 build-storybook.log
 /public/storybook
+
+.yarnrc
+.yarn/releases/*
