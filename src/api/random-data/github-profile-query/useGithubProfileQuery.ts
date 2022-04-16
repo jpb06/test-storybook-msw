@@ -34,7 +34,7 @@ export type GithubProfileQueryResult = {
 };
 
 export const useGithubProfileQuery = () =>
-  useQuery<GithubProfileQueryResult>('github-profile', async () => {
+  useQuery<GithubProfileQueryResult>(['github-profile'], async () => {
     const [response] = await Promise.all([
       axios.get<GithubProfile>(path),
       delay(2500), // ensuring every operation takes al least half a sec
