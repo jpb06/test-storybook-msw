@@ -6,6 +6,7 @@ import {
   SvgIconTypeMap,
 } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
+import { PropsWithChildren } from 'react';
 
 import { appTheme } from '@theme';
 
@@ -15,11 +16,11 @@ export type ProfileInfoProps = {
   value: string | number;
 };
 
-export const ProfileInfo: React.FC<ProfileInfoProps> = ({
+export const ProfileInfo = ({
   Icon,
   type,
   value,
-}) => {
+}: PropsWithChildren<ProfileInfoProps>) => {
   return (
     <ListItem>
       <ListItemAvatar>

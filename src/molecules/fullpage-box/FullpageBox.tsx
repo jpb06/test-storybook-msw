@@ -6,12 +6,12 @@ import {
   CardMedia,
   Grid,
 } from '@mui/material';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 import { getRuntimeConfig } from '@logic/getRuntimeConfig';
 import { Brand } from '@molecules';
 
-export const FullpageBox: React.FC = ({ children }) => {
+export const FullpageBox = ({ children }: PropsWithChildren<unknown>) => {
   const {
     public: { basePath },
   } = getRuntimeConfig();

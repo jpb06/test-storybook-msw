@@ -18,13 +18,13 @@ interface SkillsListProps extends SkillCategoryDto {
   openedCategoryId?: number;
 }
 
-export const SkillsList: React.FC<SkillsListProps> = ({
+export const SkillsList = ({
   onCategoryClicked,
   openedCategoryId,
   id,
   name,
   skills,
-}) => {
+}: SkillsListProps) => {
   const isOpen = openedCategoryId === id;
 
   return (
