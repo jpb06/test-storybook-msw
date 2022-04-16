@@ -18,21 +18,16 @@ export const applyWrappers = (props?: ApplyWrappersProps) => {
   const wrappers = [...defaultProviders, ...providers].map((key) => {
     switch (key) {
       case 'theme': {
-        const { wrapper: themeWrapper } = ThemeProvider();
-        return themeWrapper;
+        return ThemeProvider();
       }
       case 'snackbar': {
-        const { wrapper: snackbarWrapper } = SnackbarProvider();
-        return snackbarWrapper;
+        return SnackbarProvider();
       }
       case 'reactQuery': {
-        const { wrapper: reactQueryWrapper } = ReactQueryProvider();
-        return reactQueryWrapper;
+        return ReactQueryProvider();
       }
       case 'emotionCache': {
-        const { wrapper: EmotionCacheWrapper } = EmotionCacheProvider();
-
-        return EmotionCacheWrapper;
+        return EmotionCacheProvider();
       }
       default:
         throw new Error(`${key} no handled in applyWrappers`);
