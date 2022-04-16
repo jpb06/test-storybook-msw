@@ -1,6 +1,6 @@
 import { AlertColor, Button } from '@mui/material';
 import { screen, waitForElementToBeRemoved } from '@testing-library/react';
-import { PropsWithChildren, useContext } from 'react';
+import { useContext } from 'react';
 
 import { appRender } from '@tests/renders/appRender';
 
