@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from '@storybook/react';
 
 import { githubProfileQueryHandler } from '@api/msw-handlers';
-import { ReactQueryWrapper } from '@tests/wrappers/react-query';
+import { ReactQueryProvider } from '@providers';
 
 import { UserProfile } from './UserProfile';
 import { apiErrorMockData } from './mock-data/api-error.mock-data';
@@ -14,9 +14,9 @@ export default {
 } as ComponentMeta<typeof UserProfile>;
 
 const Template: Story = (_) => (
-  <ReactQueryWrapper>
+  <ReactQueryProvider>
     <UserProfile />
-  </ReactQueryWrapper>
+  </ReactQueryProvider>
 );
 
 export const NominalCase = Template.bind({});
