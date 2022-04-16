@@ -5,7 +5,7 @@ import { SkillDto } from 'src/api/main-backend/specs/api-types';
 
 interface SkillProps extends SkillDto {}
 
-export const Skill: React.FC<SkillProps> = ({ id, name }) => (
+export const Skill = ({ id, name }: SkillProps) => (
   <ListItemButton sx={{ pl: 4 }} key={id}>
     <ListItemIcon>
       <AddReactionIcon />

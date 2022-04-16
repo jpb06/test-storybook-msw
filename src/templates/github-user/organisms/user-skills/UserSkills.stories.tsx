@@ -1,7 +1,7 @@
 import { Story, ComponentMeta } from '@storybook/react';
 
 import { skillsQueryHandler } from '@api/msw-handlers';
-import { ReactQueryWrapper } from '@tests/wrappers/react-query';
+import { ReactQueryProvider } from '@providers';
 
 import { UserSkills } from './UserSkills';
 import { apiErrorMockData } from './mock-data/api-error.mock-data';
@@ -14,9 +14,9 @@ export default {
 } as ComponentMeta<typeof UserSkills>;
 
 const Template: Story = (_) => (
-  <ReactQueryWrapper>
+  <ReactQueryProvider>
     <UserSkills />
-  </ReactQueryWrapper>
+  </ReactQueryProvider>
 );
 
 export const NominalCase = Template.bind({});

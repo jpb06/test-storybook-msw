@@ -1,7 +1,7 @@
 import { screen } from '@testing-library/react';
 
 import { githubProfileQueryHandler } from '@api/msw-handlers';
-import { render } from '@tests/renders/render';
+import { appRender } from '@tests/renders/appRender';
 
 import { UserProfile } from './UserProfile';
 import { githubProfileQueryMockData } from './mock-data/githubProfileQuery.mock-data';
@@ -13,7 +13,9 @@ describe('UserProfile component', () => {
     it('should match snapshot', async () => {
       githubProfileQueryHandler(githubProfileQueryMockData, 200, true);
 
-      const { baseElement } = render(<UserProfile />);
+      const { baseElement } = appRender(<UserProfile />, {
+        providers: ['reactQuery'],
+      });
 
       await screen.findByRole('img', { name: /yolo mcbro/i });
 
@@ -23,7 +25,9 @@ describe('UserProfile component', () => {
     it('should display skills', async () => {
       githubProfileQueryHandler(githubProfileQueryMockData, 200, true);
 
-      render(<UserProfile />);
+      appRender(<UserProfile />, {
+        providers: ['reactQuery'],
+      });
 
       const {
         info: { name, email },
@@ -43,7 +47,9 @@ describe('UserProfile component', () => {
     it('should match snapshot', async () => {
       githubProfileQueryHandler({ code: 500, message: 'Oh no!' }, 500, true);
 
-      const { baseElement } = render(<UserProfile />);
+      const { baseElement } = appRender(<UserProfile />, {
+        providers: ['reactQuery'],
+      });
 
       await screen.findByRole('alert');
 
@@ -53,7 +59,7 @@ describe('UserProfile component', () => {
     it('should display an error when request failed', async () => {
       githubProfileQueryHandler({ code: 500, message: 'Oh no!' }, 500, true);
 
-      render(<UserProfile />);
+      appRender(<UserProfile />, { providers: ['reactQuery'] });
 
       await screen.findByText(/we've been unable to load your profile/i);
       expect(screen.getByTestId('ErrorOutlineIcon')).toBeInTheDocument();

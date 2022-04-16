@@ -1,7 +1,7 @@
 import { Box, SvgIconTypeMap } from '@mui/material';
 import { OverridableComponent } from '@mui/material/OverridableComponent';
 import { alpha } from '@mui/material/styles';
-import React from 'react';
+import React, { PropsWithChildren } from 'react';
 
 import { spinKeyframe } from '@logic/keyframes/spin.keyframe';
 import { appTheme } from '@theme';
@@ -11,11 +11,11 @@ export type GlobalIndicatorProps = {
   Icon: OverridableComponent<SvgIconTypeMap>;
 };
 
-export const GlobalIndicator: React.FC<GlobalIndicatorProps> = ({
+export const GlobalIndicator = ({
   title,
   Icon,
   children,
-}) => (
+}: PropsWithChildren<GlobalIndicatorProps>) => (
   <Box
     component="div"
     sx={{

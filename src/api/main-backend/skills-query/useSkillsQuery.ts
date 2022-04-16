@@ -6,4 +6,8 @@ import {
 } from '../specs/SkillsController/getAllSkills';
 
 export const useSkillsQuery = () =>
-  useAxiosQuery<GetAllSkillsSuccess, GetAllSkillsError>('skills', path, 'GET');
+  useAxiosQuery<GetAllSkillsSuccess, GetAllSkillsError>(
+    ['skills'],
+    path,
+    'GET'
+  );

@@ -6,7 +6,7 @@ export type UserAvatarProps = {
   name: string;
 };
 
-export const UserAvatar: React.FC<UserAvatarProps> = ({ name }) => (
+export const UserAvatar = ({ name }: UserAvatarProps) => (
   <Grid
     container
     direction="column"

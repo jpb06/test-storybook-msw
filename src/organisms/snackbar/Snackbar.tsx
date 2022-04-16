@@ -27,6 +27,7 @@ export const Snackbar = ({
       onClose={onClose}
       severity={messageInfo?.severity}
       sx={{ width: '100%' }}
+      closeText="Close"
     >
       {messageInfo?.message}
     </Alert>
