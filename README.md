@@ -17,10 +17,13 @@
 
 Here is a little POC exploring a few subjects:
 
-- How to architecture an application.
-- What stategy to adopt to test a frontend app.
-- How to give visibility to the outside world (a product team for example) about how well and fast the team is working on a user story.
-- How to use storybook in a next app that requires a basePath.
+❇️ How to architecture an application
+
+❇️ What stategy to adopt to test a frontend app
+
+❇️ How to give visibility to the outside world (a product team for example) about how well and fast the team is working on a user story
+
+❇️ How to use storybook in a next app that requires a basePath
 
 ## ⚡ Working with an application containing many components
 
