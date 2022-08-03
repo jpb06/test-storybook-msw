@@ -14,6 +14,7 @@
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
@@ -38,6 +39,8 @@ yarn-error.log*
 
 build-storybook.log
 /public/storybook
+storybook-static
 
 .yarnrc
 .yarn/releases/*
+
