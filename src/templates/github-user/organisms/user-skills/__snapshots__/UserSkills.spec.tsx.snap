@@ -26,7 +26,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
           </svg>
         </div>
         <div
-          class="MuiAlert-message css-acap47-MuiAlert-message"
+          class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
         >
           We've been unable to load your skills
         </div>
@@ -41,7 +41,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
             class="MuiGrid-root MuiGrid-item css-13i4rnv-MuiGrid-root"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-1c57pqz-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-120vvld-MuiSkeleton-root"
               style="width: 50px; height: 20px;"
             />
           </div>
@@ -52,11 +52,11 @@ exports[`UserProfile component error case should match snapshot 1`] = `
               class="MuiGrid-root MuiGrid-container css-17rbshw-MuiGrid-root"
             >
               <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-bw8jas-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-6c6ht9-MuiSkeleton-root"
                 style="width: 30px; height: 30px;"
               />
               <span
-                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                 style="width: 120px; height: 25px;"
               />
             </div>
@@ -68,11 +68,11 @@ exports[`UserProfile component error case should match snapshot 1`] = `
               class="MuiGrid-root MuiGrid-container css-17rbshw-MuiGrid-root"
             >
               <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-bw8jas-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-6c6ht9-MuiSkeleton-root"
                 style="width: 30px; height: 30px;"
               />
               <span
-                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                 style="width: 120px; height: 25px;"
               />
             </div>
@@ -84,11 +84,11 @@ exports[`UserProfile component error case should match snapshot 1`] = `
               class="MuiGrid-root MuiGrid-container css-17rbshw-MuiGrid-root"
             >
               <span
-                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-bw8jas-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-6c6ht9-MuiSkeleton-root"
                 style="width: 30px; height: 30px;"
               />
               <span
-                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                 style="width: 120px; height: 25px;"
               />
             </div>
@@ -114,7 +114,7 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
         Skills
       </div>
       <div
-        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-9mmcgy-MuiButtonBase-root-MuiListItemButton-root"
+        class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters css-9mmcgy-MuiButtonBase-root-MuiListItemButton-root"
         role="button"
         tabindex="0"
       >
@@ -155,7 +155,7 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-9mmcgy-MuiButtonBase-root-MuiListItemButton-root"
+        class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters css-9mmcgy-MuiButtonBase-root-MuiListItemButton-root"
         role="button"
         tabindex="0"
       >
@@ -196,7 +196,7 @@ exports[`UserProfile component nominal case should match snapshot 1`] = `
         </svg>
       </div>
       <div
-        class="MuiListItemButton-root MuiListItemButton-gutters MuiButtonBase-root css-9mmcgy-MuiButtonBase-root-MuiListItemButton-root"
+        class="MuiButtonBase-root MuiListItemButton-root MuiListItemButton-gutters css-9mmcgy-MuiButtonBase-root-MuiListItemButton-root"
         role="button"
         tabindex="0"
       >

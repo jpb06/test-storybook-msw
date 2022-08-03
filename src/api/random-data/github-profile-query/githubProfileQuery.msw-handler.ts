@@ -8,4 +8,11 @@ export const githubProfileQueryHandler = (
   result: DefaultRequestBody,
   status = 200,
   applyToServer = true
-) => genericGetHandler({ url: path, status, result, applyToServer });
+) =>
+  genericGetHandler({
+    backend: 'random-data',
+    url: path,
+    status,
+    result,
+    applyToServer,
+  });

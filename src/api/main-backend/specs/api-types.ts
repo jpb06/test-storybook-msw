@@ -1,3 +1,6 @@
+/* eslint-disable */
+/* tslint:disable */
+
 export interface RoleDto {
   id: number;
   name: string;
@@ -52,4 +55,15 @@ export interface BadRequestDto {
   statusCode: number;
   message: string | Array<string>;
   error: string;
+}
+export interface User {
+  id: string;
+  userName?: string;
+  firstName: string;
+  lastName: string;
+  role: RoleDto;
+  skills: Array<SkillDto>;
+}
+export interface UserProfileResultDto {
+  result: User;
 }

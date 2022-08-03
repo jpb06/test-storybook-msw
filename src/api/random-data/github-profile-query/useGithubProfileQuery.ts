@@ -1,5 +1,5 @@
+import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { useQuery } from 'react-query';
 
 import { delay } from '@logic/delay';
 
@@ -37,7 +37,7 @@ export const useGithubProfileQuery = () =>
   useQuery<GithubProfileQueryResult>(['github-profile'], async () => {
     const [response] = await Promise.all([
       axios.get<GithubProfile>(path),
-      delay(2500), // ensuring every operation takes al least half a sec
+      delay(2500), // ensuring every operation takes at least half a sec
     ]);
 
     return { ...response.data.extra.raw_info, ...response.data.info };

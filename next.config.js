@@ -5,6 +5,7 @@ const { serverRuntimeConfig, publicRuntimeConfig } = initializeConfig();
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  distDir: 'dist',
   reactStrictMode: true,
   pageExtensions: ['page.tsx', 'api.ts'],
   swcMinify: true,

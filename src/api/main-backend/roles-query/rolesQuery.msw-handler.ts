@@ -8,4 +8,11 @@ export const rolesQueryHandler = (
   result: DefaultRequestBody,
   status = 200,
   applyToServer = true
-) => genericGetHandler({ url: path, status, result, applyToServer });
+) =>
+  genericGetHandler({
+    backend: 'main-backend',
+    url: path,
+    status,
+    result,
+    applyToServer,
+  });

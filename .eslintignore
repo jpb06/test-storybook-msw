@@ -1,5 +1,5 @@
 node_modules
 public/storybook
 next.config.js
-.storybook
 config
+dist

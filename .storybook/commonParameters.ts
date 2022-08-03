@@ -1,4 +1,5 @@
 import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
+import { RouterContext } from 'next/dist/shared/lib/router-context';
 
 export const commonParameters = {
   actions: { argTypesRegex: '^on[A-Z].*' },
@@ -12,5 +13,8 @@ export const commonParameters = {
   },
   msw: {
     handlers: {},
+  },
+  nextRouter: {
+    Provider: RouterContext.Provider,
   },
 };

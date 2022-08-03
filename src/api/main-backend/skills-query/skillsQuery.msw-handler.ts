@@ -9,4 +9,10 @@ export const skillsQueryHandler = (
   status = 200,
   applyToServer = true
 ) =>
-  genericGetHandler({ url: path, status, result: { result }, applyToServer });
+  genericGetHandler({
+    backend: 'main-backend',
+    url: path,
+    status,
+    result: { result },
+    applyToServer,
+  });
