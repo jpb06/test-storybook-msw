@@ -17,7 +17,7 @@
     "test-ci": "jest --ci --coverage",
     "storybook": "start-storybook -p 6006 -c .storybook/dev",
     "build-storybook": "build-storybook --quiet -c .storybook/prod && rm -rf ./public/storybook && mv ./storybook-static ./public/storybook",
-    "api:sync": "generateTypesFromUrl NEXT_PUBLIC_API_URL -json ./src/api/main-backend/specs && eslint ./src/api/main-backend/specs --fix",
+    "api:sync": "generateTypesFromUrl -u https://rhf-mui-nx-sandbox-back.herokuapp.com/-json -o ./src/api/main-backend/specs",
     "sync-icons": "pnpm generateReadmeIcons -h 70"
   },
   "dependencies": {
