@@ -1,6 +1,6 @@
-import { withNextRouter } from '@gogaille/storybook-addon-next-router';
 import { CssBaseline } from '@mui/material';
 import { mswDecorator } from 'msw-storybook-addon';
+import React from 'react';
 
 import { AppThemeProvider } from '../src/molecules/providers';
 
@@ -16,14 +16,5 @@ export const commonDecorators = [
       </AppThemeProvider>
     </>
   ),
-  withNextRouter({
-    pathname: 'storybook',
-    push() {},
-    query: {},
-    events: {
-      on: () => {},
-      off: () => {},
-    },
-  }),
   mswDecorator,
 ];
