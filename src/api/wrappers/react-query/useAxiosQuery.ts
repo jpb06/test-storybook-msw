@@ -1,11 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import { Method } from 'axios';
 
-import { getMainBackendUrl } from 'src/api/main-backend/get-main-backend-url';
-
 import { axiosRequest } from '../axios/axios-request';
 import { QueryResult } from '../axios/types/query-result.type';
 import { UnWrapResult } from '../axios/types/unwrap-result.type';
+import { getUrl } from './get-url';
 
 export const useAxiosQuery = <TSuccess, TError>(
   key: Array<unknown>,
@@ -14,7 +13,7 @@ export const useAxiosQuery = <TSuccess, TError>(
   data = undefined,
   options = {}
 ): QueryResult<TSuccess, TError> => {
-  const mainbackendUrl = getMainBackendUrl(url);
+  const mainbackendUrl = getUrl('main-backend', url);
 
   return useQuery<
     UnWrapResult<TSuccess> | undefined,
