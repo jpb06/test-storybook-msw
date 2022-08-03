@@ -26,7 +26,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
           </svg>
         </div>
         <div
-          class="MuiAlert-message css-acap47-MuiAlert-message"
+          class="MuiAlert-message css-1pxa9xg-MuiAlert-message"
         >
           We've been unable to load your profile
         </div>
@@ -41,7 +41,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
             class="MuiCardHeader-avatar css-1ssile9-MuiCardHeader-avatar"
           >
             <span
-              class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-1subwxh-MuiSkeleton-root"
+              class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-w3gvk9-MuiSkeleton-root"
               style="width: 55px; height: 55px;"
             />
           </div>
@@ -52,7 +52,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
               class="MuiTypography-root MuiTypography-body2 MuiCardHeader-title css-et1ao3-MuiTypography-root"
             >
               <span
-                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                 style="width: 80%; height: 16px; margin-top: 14px; margin-bottom: 6px;"
               />
             </span>
@@ -60,7 +60,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
               class="MuiTypography-root MuiTypography-body2 MuiCardHeader-subheader css-1ijlrmj-MuiTypography-root"
             >
               <span
-                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                 style="width: 40%; height: 14px; margin-bottom: 22px;"
               />
             </span>
@@ -106,7 +106,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                 class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
               >
                 <span
-                  class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-1subwxh-MuiSkeleton-root"
+                  class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-w3gvk9-MuiSkeleton-root"
                   style="width: 40px; height: 40px;"
                 />
               </div>
@@ -117,7 +117,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                   class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
                 >
                   <span
-                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                     style="width: 20%; height: 14px;"
                   />
                 </span>
@@ -125,7 +125,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                   class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ijlrmj-MuiTypography-root"
                 >
                   <span
-                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                     style="width: 60%; height: 14px;"
                   />
                 </p>
@@ -138,7 +138,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                 class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
               >
                 <span
-                  class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-1subwxh-MuiSkeleton-root"
+                  class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-w3gvk9-MuiSkeleton-root"
                   style="width: 40px; height: 40px;"
                 />
               </div>
@@ -149,7 +149,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                   class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
                 >
                   <span
-                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                     style="width: 20%; height: 14px;"
                   />
                 </span>
@@ -157,7 +157,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                   class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ijlrmj-MuiTypography-root"
                 >
                   <span
-                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                     style="width: 60%; height: 14px;"
                   />
                 </p>
@@ -170,7 +170,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                 class="MuiListItemAvatar-root css-1e9lk82-MuiListItemAvatar-root"
               >
                 <span
-                  class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-1subwxh-MuiSkeleton-root"
+                  class="MuiSkeleton-root MuiSkeleton-circular MuiSkeleton-wave css-w3gvk9-MuiSkeleton-root"
                   style="width: 40px; height: 40px;"
                 />
               </div>
@@ -181,7 +181,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                   class="MuiTypography-root MuiTypography-body2 MuiListItemText-primary css-et1ao3-MuiTypography-root"
                 >
                   <span
-                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                     style="width: 20%; height: 14px;"
                   />
                 </span>
@@ -189,7 +189,7 @@ exports[`UserProfile component error case should match snapshot 1`] = `
                   class="MuiTypography-root MuiTypography-body2 MuiListItemText-secondary css-1ijlrmj-MuiTypography-root"
                 >
                   <span
-                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-xxr05m-MuiSkeleton-root"
+                    class="MuiSkeleton-root MuiSkeleton-text MuiSkeleton-wave css-142k08h-MuiSkeleton-root"
                     style="width: 60%; height: 14px;"
                   />
                 </p>
