@@ -5,6 +5,7 @@ import { commonParameters } from '../commonParameters';
 
 // Initialize MSW
 initialize({
+  onUnhandledRequest: 'bypass',
   serviceWorker: {
     url: `${basePath}/mockServiceWorker.js`,
     options: {
