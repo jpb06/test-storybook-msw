@@ -1,4 +1,4 @@
-import { DefaultRequestBody, rest } from 'msw';
+import { DefaultBodyType, rest } from 'msw';
 
 import { Backend, getUrl } from '@api';
 
@@ -8,7 +8,7 @@ type GenericGetHandlerParams = {
   backend: Backend;
   url: string;
   status: number;
-  result: DefaultRequestBody;
+  result: DefaultBodyType;
   applyToServer?: boolean;
 };
 
