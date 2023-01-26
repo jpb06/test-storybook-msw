@@ -14,8 +14,8 @@ import { INITIAL_VIEWPORTS } from '@storybook/addon-viewport';
 import { Story, ComponentMeta } from '@storybook/react';
 import { useContext } from 'react';
 
-import { appTheme } from '../../theme';
 import { SnackbarContext, WithSnackbar } from './Snackbar.context';
+import { appTheme } from '../../theme';
 
 export default {
   component: WithSnackbar,

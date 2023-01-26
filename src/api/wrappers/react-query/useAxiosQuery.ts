@@ -1,10 +1,10 @@
 import { useQuery } from '@tanstack/react-query';
 import { Method } from 'axios';
 
+import { getUrl } from './get-url';
 import { axiosRequest } from '../axios/axios-request';
 import { QueryResult } from '../axios/types/query-result.type';
 import { UnWrapResult } from '../axios/types/unwrap-result.type';
-import { getUrl } from './get-url';
 
 export const useAxiosQuery = <TSuccess, TError>(
   key: Array<unknown>,
