@@ -1,7 +1,7 @@
 import React, { PropsWithChildren } from 'react';
 
-import { EmotionCacheProvider as EmotionCache } from '../../../molecules/providers';
 import { TestWrapper } from './types/test-wrapper.type';
+import { EmotionCacheProvider as EmotionCache } from '../../../molecules/providers';
 
 export const EmotionCacheProvider =
   (): TestWrapper =>
